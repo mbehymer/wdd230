@@ -68,7 +68,6 @@ main a {
 
 .week-info {
     /* width: 100%; */
-    border-radius: 2px solid gray;
     display: none;
     padding: 20px;
     transition: opacity 2s linear;
@@ -91,9 +90,21 @@ main a {
 } */
 
 #footer-container {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     background-color: steelblue;
-    color: white;
     padding: 5px 0;
     border-radius: 0 0 5px 5px;
+}
+
+#footer-content {
+    width: 25%;
+    height: 75px;
+    color: #f1f1f1;
+    text-align: center;
+    background-color:#333333;
+    padding: 0 15px;
+    align-self: center;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px #33333388;
 }
