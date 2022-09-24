@@ -1,0 +1,32 @@
+@media screen and (min-width: 650px) {
+    
+    h1 {
+        font-size: 5vw;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+
+    #card-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 6%;
+    }
+    #card-grid :nth-child(2) {
+        columns: 1/3;
+        justify-self: center;
+    }
+    
+    #sub-heading-container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #sub-heading-container span {
+        display: inline;
+    }
+    
+    .design-card h3 {
+        font-size: 2.5vw;
+    }
+
+}
