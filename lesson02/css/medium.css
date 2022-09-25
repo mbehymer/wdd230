@@ -1,15 +1,17 @@
 @media screen and (min-width: 650px) {
     
     h1 {
-        font-size: 5vw;
+        font-size: 6.5vw;
     }
     h2 {
-        font-size: 4vw;
+        font-size: 5.25vw;
     }
 
     #card-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 6%;
+        /* gap: 30px; */
+        max-width: 900px;
+        /* margin: 0 auto; */
     }
     #card-grid :nth-child(2) {
         columns: 1/3;
