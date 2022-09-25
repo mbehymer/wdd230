@@ -1,7 +1,24 @@
 @media screen and (min-width: 1050px) {
     
+    h1 {
+        font-size: 5vw;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+
     #card-grid {
         grid-template-columns: 1fr 1fr 1fr;
-        /* gap: 100px */
+        gap: 75px;
+        max-width: 1200px;
     }
+    
 }
+/* 
+@media screen and (min-width: 1750px) {
+    
+    #card-grid {
+        gap: 100px;
+        max-width: 1900px;
+    }
+} */
