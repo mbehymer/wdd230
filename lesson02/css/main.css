@@ -26,13 +26,13 @@ nav {
 }
 
 #portal-link-container {
-    background-color: steelblue;
+    background-color: rgb(50, 103, 147);
     padding: 5px 20px;
     border-radius: 20px;
 }
 
 #portal-link-container:hover {
-    background-color: rgb(50, 103, 147);
+    background-color: steelblue;
 }
 
 #portal-link-container a{
@@ -101,13 +101,36 @@ h2 {
 }
 
 .design-card img:hover {
-    opacity: 50%
+    opacity: 95%
+}
+
+.design-card h4 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.design-card h4 a {
+    text-decoration: none;
+}
+
+#samsung-card h4 {
+    font-family: arial, sans-serif;
+    color: black;
+}
+
+#chase-card h4 {
+    color: #126bc5;;
+}
+
+#time-card h4 {
+    font-family: serif;
+    color: #e90606;
 }
 
 .design-card .card-text {
     background-color: #000;
     color: white;
-    padding: 15px 20px;
+    padding: 10px 20px 15px 20px;
     /* border-radius: 5px; */
     /* margin: 5px; */
 }
