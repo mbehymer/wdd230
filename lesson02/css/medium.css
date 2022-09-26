@@ -9,13 +9,7 @@
 
     #card-grid {
         grid-template-columns: 1fr 1fr;
-        /* gap: 30px; */
         max-width: 900px;
-        /* margin: 0 auto; */
-    }
-    #card-grid :nth-child(2) {
-        columns: 1/3;
-        justify-self: center;
     }
     
     #sub-heading-container {
