@@ -93,7 +93,8 @@ section {
 }
 
 #site-purpose-container {
-    margin: 0 25px
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 #persona-container-flex {
