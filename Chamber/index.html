@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matthew Behymer" />
+    <meta name="description" content="The home site for the for the Chamber of Commerce for Rocksberg." />
+
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    
+    <script defer src="js/main.js"></script> <!-- Using Defer will cause the javascript to run after the html has loaded-->
+    
+    <title>Chamber Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="hamburger-btn">&#9776;</button>
+            <div id="logo-container">
+                <img id="logo-img" src="../lesson03/images/Rocksberg-logos_black-small.png">
+            </div>
+            <div id="social-container">
+                <div><a href="https://facebook.com"><img src="./images/facebook.png" alt="facebook icon"></a></div>
+                <div><a href="https://instagram.com"><img src="./images/instagram.png" alt="instagram icon"></a></div>
+            </div>
+            <div id="current-date">
+            </div>
+            <ul id="nav-link-container">
+                <li class="nav-link"><a href="#">Home</a></li>
+                <li class="nav-link"><a href="#">Places</a></li>
+                <li class="nav-link"><a href="#">About</a></li>
+                <li class="nav-link"><a href="#">More Info</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="main-content-grid">
+            <section id="hero-container" class="box">
+                <h2>Hero with site name and call to action.</h2>
+            </section><section id="event-container" class="box">
+                <h2>Event</h2>
+            </section>
+            <section id="weather-container" class="box">
+                <h2>Weather</h2>
+            </section>
+            <section id="news-container" class="box">
+                <h2>News</h2>
+            </section>
+            <section id="join-container" class="box">
+                <h2>Join</h2>
+            </section>
+            <section id="spotlight-container" class="box">
+                <div id="spotlight1" class="box">
+                    <h3>spotlight 1</h3>
+                </div>
+                <div id="spotlight2" class="box">
+                    <h3>spotlight 2</h3>
+                </div>
+                <div id="spotlight3" class="box">
+                    <h3>spotlight 3</h3>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-container">
+            <div id="footer-logo">
+                <div id="footer-logo-container">
+                    <img id="footer-logo-img" src="../lesson03/images/Rocksberg-logos_black-small.png">
+                </div>
+            </div>
+            <div id="footer-content">
+                <p>&copy; Rexburg Chamber of Commerce</p>
+                <p><span id="year"></span> - Matthew Behymer - Idaho</p>
+                <p>WDD 230 Project</p>
+                <p>Last Modified: <span id="last-change"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
