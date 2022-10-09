@@ -1,0 +1,167 @@
+/* #1D806C
+This will be used as a shadow and to accent other colors.
+
+#FFFFFF
+This will be used as the main background color.
+
+#333333
+This will be used as the main text color as well as border color.
+
+#802E11
+This will be used as a warning and to underline important details.
+
+#44CBB1 
+This will be used as a highlight color.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Vollkorn+SC&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    color: #333333;
+}
+
+img {
+    max-width:100%;
+}
+
+nav {
+    background-color: white;
+    /* border-bottom: 1px solid #333333; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:#1D806C;
+    /* padding: 20px; */
+    /* gap: 5px; */
+}
+
+#hamburger-btn {
+    font-size: 3em;
+    width: 100px;
+}
+
+#logo-container {
+    width: 40vw;
+    max-width: 400px;
+    padding: 15px;
+    background-color: #a1e1d5;
+    border-radius: 5px;
+}
+
+#logo-container img {
+    /* border: 7px solid #FFFFFF; */
+    /* border-radius: 50%; */
+
+}
+
+#nav-link-container {
+    width: 100%;
+
+}
+
+
+#social-container {
+    /* background-color: #ffffff; */
+    padding: 0 50px;
+    background-color: #333333;
+    border-radius: 5px;
+    /* width: 20vw; */
+    /* justify-self: stretch; */
+    
+}
+
+#social-container div img{
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+}
+
+.nav-link {
+    display: none;
+    /* border-top: 1px solid #333333; */
+    list-style: none;
+    text-align: center;
+    background: #333333;
+    border-top: 3px solid #FFFFFF66;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 30px 0;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.show-nav {
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #ffffff;
+    color: #333333;
+}
+
+#current-date {
+    margin: 10px;
+    padding: 20px;
+    background-color: #e1e1e1;
+    border: 1px solid #333333;
+}
+
+#main-content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* margin: 15px auto; */
+    gap: 10px;
+    margin: 20px;
+    
+}
+
+.box {
+    min-height: 200px;
+    background-color: #e1e1e1;
+    border: 1px solid #333333;
+    padding: 20px;
+}
+
+#spotlight-container {
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+}
+
+#spotlight3 {
+    display: none;
+}
+
+#join-container {
+    display: none;
+}
+
+#footer-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #1D806C;
+    padding: 5px 0;
+    align-items: center;
+}
+
+#footer-logo-container {
+    max-width: 300px;
+    background-color: #a1e1d5;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#footer-content {
+    /* width: 100%; */
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px #33333388;
+    text-align: center;
+}
