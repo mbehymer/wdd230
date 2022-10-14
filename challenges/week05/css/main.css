@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-family: Acme, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+main {
+	margin: 0.5rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 0.5rem;
+	background-color: #bed;
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 95%;
+}
+
+
+#shopping-list-container {
+    width: 450px;
+    background-color: #bbeedd;
+    padding: 20px;
+    border: 2px solid #333333;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 5px;
+}
+
+ul {
+    /* width: 100%; */
+    margin: 20px;
+    min-height: 300px;
+    border: 2px solid #a7a7a7;
+    padding: 10px;
+}
+
+ul li{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.item-content {
+    align-self: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    /* padding: */
+}
+button {
+    border: 1px solid #333333;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+ul li button {
+    font-size: 1.2em;
+    border: 2px solid #333333;
+}
