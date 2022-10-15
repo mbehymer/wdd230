@@ -19,5 +19,15 @@ hamburgerBtn.addEventListener("click", ()=> {
     navLinks = document.querySelectorAll(".nav-link");
     navLinks.forEach(link => {
         link.classList.toggle("show-nav");
-    })
-})
+    });
+});
+
+const currentDay = dat_now.getDay()
+
+if (currentDay === 5 || currentDay === 1){
+    document.querySelector("#info-banner").style.display = "block";
+} else {
+    document.querySelector("#info-banner").style.display = "none";
+
+}
+console.log(dat_now.getDay());
