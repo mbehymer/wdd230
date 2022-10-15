@@ -24,7 +24,7 @@ hamburgerBtn.addEventListener("click", ()=> {
 
 const currentDay = dat_now.getDay()
 
-if (currentDay === 6 || currentDay === 1){
+if (currentDay === 2 || currentDay === 1){
     document.querySelector("#info-banner").style.display = "block";
 } else {
     document.querySelector("#info-banner").style.display = "none";
