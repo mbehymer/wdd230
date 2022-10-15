@@ -1,7 +1,20 @@
 @media screen and (min-width: 650px) {
+    #hamburger-btn {
+        /* font-size: 2.5em; */
+        /* width: 50px; */
+        /* padding: 5px 10px; */
+        /* max-height: 50px; */
+        align-self:stretch;
+        justify-self:stretch;
+    }
+    
+    #current-date {
+        grid-column: 2/3;
+    }
+
     #main-content-grid {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
     }
 
     #hero-container {
