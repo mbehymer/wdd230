@@ -23,7 +23,7 @@ This will be used as a highlight color.*/
 }
 
 img {
-    max-width:100%;
+    max-width: 100%;
 }
 
 h1 {
@@ -206,12 +206,26 @@ nav ul li a:hover {
 
 #hero-container {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
+    /* background-image: url("../images/rocks-small-text.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    /* object-fit: cover; */
 }
 
 #hero-container img {
-    height: 100%;
-    overflow: hidden;
+    object-fit: cover;
+}
+#hero-img-small {
+    max-height: 450px;
+    display: block;
+}
+#hero-img-medium {
+    display: none;
+}
+#hero-img-large {
+    display: none;
 }
 
 #hero-container h1 {
