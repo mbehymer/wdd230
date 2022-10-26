@@ -38,6 +38,12 @@ button, .btn{
     font-size: 1.2rem;
     border-radius: 4px;
     font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-medium {
+    padding: 10px;
+    font-size: 1rem;
 }
 
 nav {
@@ -80,6 +86,7 @@ nav {
 
 #nav-link-container {
     width: 100%;
+    grid-column: 1/4;
 }
 
 
