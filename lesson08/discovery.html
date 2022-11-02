@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matthew Behymer">
+    <meta name="description" content="The home site for the for the Chamber of Commerce for Rocksberg.">
+
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/discovery.css">
+    
+    <script defer src="js/main.js"></script> <!-- Using Defer will cause the javascript to run after the html has loaded-->
+    <script defer src="js/lazyload.js"></script>
+ 
+    <title>Chamber Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="hamburger-btn">&#9776;</button>
+            <div id="logo-container">
+                <img id="logo-img" src="../lesson03/images/Rocksberg-logos_black-small.webp" alt="Website logo image Rocksberg">
+            </div>
+            <div id="social-container">
+                <div><a href="https://facebook.com"><img src="./images/facebook.png" alt="facebook icon"></a></div>
+                <div><a href="https://instagram.com"><img src="./images/instagram.png" alt="instagram icon"></a></div>
+            </div>
+            <div id="current-date">
+            </div>
+            <ul id="nav-link-container">
+                <li class="nav-link"><a href="./index.html">Home</a></li>
+                <li class="nav-link"><a href="./discovery.html">Places</a></li>
+                <li class="nav-link"><a href="join.html">Join</a></li>
+                <li class="nav-link"><a href="#">More Info</a></li>
+            </ul>
+        </nav>
+        <div id="info-banner" class="warning box-container"><h2 class="warning heading">ANNOUNCEMENT</h2><p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
+    </header>
+    <main>
+        <section id="main-title" class="box-container">
+            <h1>Discover More About Rocksberg!</h1>
+        </section>
+        <div id="photo-grid">
+            <div class="photo-card box-container">
+                <div class="card-img-container">
+                    <img src="./images/east-trail-low.png" 
+                    data-src="./images/east-trail.png" 
+                    alt="Rocksberg East Trail">
+                </div>
+                <div class="content-container">
+                    <h3 class="heading">Rocksberg East Trail</h3>
+                    <p class="box-description">Take a look at our beautiful East trail.</p>
+                    <a href="#" class="btn btn-medium">More Info</a>
+                </div>
+            </div>
+            <div class="photo-card box-container">
+                <div class="card-img-container">
+                    <img src="./images/ice-climbing-low.png" 
+                    data-src="./images/ice-climbing.png" 
+                    alt="Rocksberg Ice Climbing">
+                </div>
+                <div class="content-container">
+                    <h3 class="heading">
+                    Rocksberg Ice Climbing</h3>
+                    <p class="box-description">Come try Rocksberg Ice Climbing in the winter!</p>
+                    
+                    <a href="#" class="btn btn-medium">More Info</a>
+                </div>
+            </div>
+            <div class="photo-card box-container">
+                <div class="card-img-container">
+                    <img src="./images/main-street-low.png" 
+                    data-src="./images/main-street.png" 
+                    alt="Rocksberg Main Street">
+                </div>
+                <div class="content-container">
+                    <h3 class="heading">
+                    Rocksberg Main Street</h3>
+                    <p class="box-description">View all the local business here on Main Street!</p>
+                    
+                    <a href="#" class="btn btn-medium">More Info</a>
+                </div>
+            </div>
+            <div class="photo-card box-container">
+                <div class="card-img-container">
+                    <img src="./images/north-trail-low.png" 
+                    data-src="./images/north-trail.png" 
+                    alt="Rocksberg North Trail">
+                </div>
+                <div class="content-container">
+                    <h3 class="heading">
+                    Rocksberg North Trail</h3>
+                    <p class="box-description">Take a look at our beautiful East trail.</p>
+                    
+                    <a href="#" class="btn btn-medium">More Info</a>
+                </div>
+            </div>
+            <div class="photo-card box-container">
+                <div class="card-img-container">
+                    <img src="./images/on-trail-low.png" 
+                    data-src="./images/on-trail.png" 
+                    alt="Rocksberg On Trail">
+                </div>
+                <div class="content-container">
+                    <h3 class="heading">
+                    Rocksberg On Trail</h3>
+                    <p class="box-description">Get a better idea of the trail you will be going on!</p>
+                    
+                    <a href="#" class="btn btn-medium">More Info</a>
+                </div>
+            </div>
+            <div class="photo-card box-container">
+                <div class="card-img-container">
+                    <img src="./images/snow-town-low.png" 
+                    data-src="./images/snow-town.png" 
+                    alt="Rocksberg Snow Town">
+                </div>
+                <div class="content-container">
+                    <h3 class="heading">
+                    Rocksberg Snow Town</h3>
+                    <p class="box-description">Rocksberg in the snow! Find out more about regular weather conditions.</p>
+                    
+                    <a href="#" class="btn btn-medium">More Info</a>
+                </div>
+            </div>
+            <div class="photo-card box-container">
+                <div class="card-img-container">
+                    <img src="./images/town-image-low.png" 
+                    data-src="./images/town-image.png" 
+                    alt="Rocksberg Town Image">
+                </div>
+                <div class="content-container">
+                    <h3 class="heading">
+                    Rocksberg Town</h3>
+                    <p class="box-description">Rocksberg, a small little town with lots of outdoors activities!</p>
+                    
+                    <a href="#" class="btn btn-medium">More Info</a>
+                </div>
+            </div>
+            <div class="photo-card box-container">
+                <div class="card-img-container">
+                    <img src="./images/town-overlook-low.png" 
+                    data-src="./images/town-overlook.png" 
+                    alt="Rocksberg Town Overlook">
+                </div>
+                <div class="content-container">
+                    <h3 class="heading">
+                    Rocksberg Town Overlook</h3>
+                    <p class="box-description">Rocksberg has been here since 1890, learn more about the history here!</p>
+                    
+                    <a href="#" class="btn btn-medium">More Info</a>
+                </div>
+            </div>
+            <div class="photo-card box-container">
+                <div class="card-img-container">
+                    <img src="./images/waterfall-low.png" 
+                    data-src="./images/waterfall.png" 
+                    alt="Rocksberg Waterfall">
+                </div>
+                <div class="content-container">
+                    <h3 class="heading">
+                    Rocksberg Waterfall</h3>
+                    <p class="box-description">Feeling like getting wet? Go on our waterfall hike!</p>
+                    
+                    <a href="#" class="btn btn-medium">More Info</a>
+                </div>
+            </div>
+        </div>
+        <div>Time since last visit: <span id="last-visit">First time!</span></div>
+    </main>
+    <footer>
+        <div id="footer-container">
+            <div id="footer-logo">
+                <div id="footer-logo-container">
+                    <img id="footer-logo-img" src="../lesson03/images/Rocksberg-logos_black-small.png" alt="Website logo image Rocksberg">
+                </div>
+            </div>
+            <div id="footer-content">
+                <p>&copy; Rexburg Chamber of Commerce</p>
+                <p><span id="year"></span> - Matthew Behymer - Idaho</p>
+                <p>WDD 230 Project</p>
+                <p>Last Modified: <span id="last-change"></span></p>
+                <p>Rocksberg Location: <a href="https://goo.gl/maps/wn699n6enLtiACYx8">&#128205;</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
