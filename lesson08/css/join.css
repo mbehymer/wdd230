@@ -49,7 +49,7 @@ input {
 
 .required {
     font-weight: bold;
-    color: red;
+    color: #e70404;
     margin: 0 5px;
 }
 
