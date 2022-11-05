@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/join.css">
     
     <script defer src="js/main.js"></script> <!-- Using Defer will cause the javascript to run after the html has loaded-->
+    <script defer src="js/join.js"></script> <!-- Using Defer will cause the javascript to run after the html has loaded-->
     <!-- <script defer src="js/join.js"></script> -->
  
     <title>Join</title>
@@ -42,22 +43,113 @@
     </header>
     <main>
         <div id="form-container">
+            <h1>Business Application</h1>
             <form method="get" action="thankyou.html">
-                <!-- <label for="fname">First Name:</label>
-                <input type="text" id="fname" name="firstname" required>
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lastname" required>
-                <label for="btitle">Business Title</label>
-                <input type="text" id="btitle" name="businesstitle" pattern="[A-Za-z\s\-]{7,}" title="May only use alpha characters, spaces and dashes "> -->
-                
-                <!-- <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="example@email.com" required> -->
-                <label for="cellnumber">Phone Number:</label>
-                <input type="tel" id="cellnumber" name="cellphonenumber"  required>
+                <div id="form-content">
+                <div id="form-inputs">
+                    <div class="flex-container">
+                        <label for="fname">First Name<span class="required">*</span>:</label>
+                        <input type="text" id="fname" name="firstname" required>
+                    </div>
 
+                    <div class="flex-container">
+                        <label for="lname">Last Name<span class="required">*</span>:</label>
+                        <input type="text" id="lname" name="lastname" required>
+                    </div>
 
+                    <div class="flex-container">
+                        <label for="btitle">Business Title<span class="required">*</span>
+                            <p><small>(Only letters, spaces and dashes and at least 7 characters):</small></p> </label>
+                        <input type="text" id="btitle" name="businesstitle" pattern="[A-Za-z\s\-]{7,}" title="May only use alpha characters, spaces and dashes ">
+                    
+                    </div>
+
+                    <div class="flex-container">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com">
+                    </div>
+
+                    <div class="flex-container">
+                        <label for="cellnumber">Phone Number<span class="required">*</span>:</label>
+                        <input type="tel" id="cellnumber" name="cellphonenumber"  required>
+                    </div>
+
+                    <div class="flex-container">
+                        <label for="bname">Business Name<span class="required">*</span>:</label>
+                        <input type="text" id="bname" required>
+                    </div>
+
+                    <div class="flex-container">
+                        <label for="memlevels">Membership Levels</label>
+                        <div id="radio">
+                            <div>
+                                <input type="radio" id="one" name="mlevel" value="level1">
+                                <label for="one">Non Profit</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="two" name="mlevel" value="level2">
+                                <label for="two">Bronze</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="three" name="mlevel" value="level3">
+                                <label for="three">Silver</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="four" name="mlevel" value="level4">
+                                <label for="four">Gold</label>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="flex-container">
+                        <label for="bdescription">Business Description</label>
+                        <textarea id="bdescription" name="buisinessdescription" placeholder="Your business description"></textarea>
+                    </div>
+
+                    <input type="hidden" id="date">
+                    
+                </div>
                 
-  <input type="submit" value="Submit">
+                <div id="memdescriptions" class="">
+                    <div id="one-description" class="mem-description card box-container">
+                        <h3 class="heading">NP Membership</h3>
+                        <ul>
+                            <li>For non profit organizations and there is no fee</li>
+                        </ul>
+                    </div>
+                    <div id="two-description" class="mem-description  box-container">
+                        <h3 class="heading">Bronze Membership</h3>
+                        <ul>
+                            <li>15% discount on events</li>
+                            <li>10% discount on advertising</li>
+                            <li>Fee of $50/month</li>
+                        </ul>
+                    </div>
+                    <div id="three-description" class="mem-description  box-container">
+                        <h3 class="heading">Silver Membership</h3>
+                        <ul>
+                            <li>25% discount on events</li>
+                            <li>15% discount on advertising</li>
+                            <li>Free participation in the trade fair</li>
+                            <li>Fee of $100/month</li>
+                        </ul>
+                    </div>
+                    <div id="four-description" class="mem-description  box-container">
+                        <h3 class="heading">Gold Membership</h3>
+                        <ul>
+                            <li>50% discount on events</li>
+                            <li>50% discount on advertising</li>
+                            <li>Free participation in the trade fair</li>
+                            <li>5 free featured ads per year</li>
+                            <li>1 free training per quarter</li>
+                            <li>Fee of $250/month</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                
+                <input type="submit" value="Submit" class="btn" id="submit">
             </form>
         </div>
     </main>

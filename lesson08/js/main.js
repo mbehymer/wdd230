@@ -35,24 +35,23 @@ console.log(dat_now.getDay());
 
 if (document.querySelector("#last-visit")) {
 
-    let current = Date.now();
-    let previous = (localStorage.getItem("lastvisit"));
+        let current = Date.now();
+        let previous = (localStorage.getItem("lastvisit"));
 
-localStorage.setItem("lastvisit", current);
+    localStorage.setItem("lastvisit", current);
 
-console.log("current", current);
-console.log("previous", previous);
-let diff = (current - previous);
+    console.log("current", current);
+    console.log("previous", previous);
+    let diff = (current - previous);
 
 
-if (previous !== null) {
-    let lastVisited = document.querySelector("#last-visit");
-    let days = Math.floor(diff/1000/60/60/24);
-    let hours = Math.floor(((diff/1000/60/60/24) - days)*24);
-    let minutes = Math.floor(((diff/1000/60/60) - hours)*60);
-    let seconds = Math.floor(((diff/1000/60)  - minutes)*60);
+    if (previous !== null) {
+        let lastVisited = document.querySelector("#last-visit");
+        let days = Math.floor(diff/1000/60/60/24);
+        let hours = Math.floor(((diff/1000/60/60/24) - days)*24);
+        let minutes = Math.floor(((diff/1000/60/60) - hours)*60);
+        let seconds = Math.floor(((diff/1000/60)  - minutes)*60);
 
-    lastVisited.innerHTML = days + " days " + hours + " Hours " + minutes + " Minutes " + seconds + " Seconds ago."
-}
-
+        lastVisited.innerHTML = days + " days " + hours + " Hours " + minutes + " Minutes " + seconds + " Seconds ago."
+    }
 }
