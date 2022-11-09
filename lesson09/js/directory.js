@@ -1,4 +1,4 @@
-const requestURL = window.location.origin+"/lesson09/business.JSON";
+const requestURL = "https://mbehymer.github.io/wdd230/lesson09/business.JSON";
 
 async function getBusinesses (url) {
     const response = await fetch(url);
