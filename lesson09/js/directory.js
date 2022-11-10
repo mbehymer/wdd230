@@ -35,6 +35,8 @@ function displayCardBusinesses(business) {
 
     // popluate with information
     card.classList.add("card");
+    logo.setAttribute("width", "125px");
+    logo.setAttribute("height", "125px");
     logo.setAttribute("src", business.logourl);
     logo.setAttribute("alt", "Logo Image");
     name.textContent = business.name;
