@@ -9,7 +9,6 @@ h1 {
     gap: 5%;
 }
 
-
 #card-view {
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +33,6 @@ h1 {
 }
 
 .card img {
-    width: 50%;
     border: 2px solid #333333;
     border-radius: 50%;
 }
