@@ -35,7 +35,7 @@ function displayCardBusinesses(business) {
 
     // popluate with information
     card.classList.add("card");
-    logo.setAttribute("src", "images/"+business.logourl);
+    logo.setAttribute("src", business.logourl);
     logo.setAttribute("alt", "Logo Image");
     name.textContent = business.name;
     address.innerHTML = `Address: ${business.address}`
