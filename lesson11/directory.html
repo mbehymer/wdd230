@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matthew Behymer">
+    <meta name="description" content="The home site for the for the Chamber of Commerce for Rocksberg.">
+
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/directory.css">
+    
+    <script defer src="js/main.js"></script> <!-- Using Defer will cause the javascript to run after the html has loaded-->
+    <script src="js/directory.js"></script>
+ 
+    <title>Directory</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="hamburger-btn">&#9776;</button>
+            <div id="logo-container">
+                <img id="logo-img" src="../lesson03/images/Rocksberg-logos_black-small.webp" alt="Website logo image Rocksberg">
+            </div>
+            <div id="social-container">
+                <div><a href="https://facebook.com"><img src="./images/facebook.png" alt="facebook icon"></a></div>
+                <div><a href="https://instagram.com"><img src="./images/instagram.png" alt="instagram icon"></a></div>
+            </div>
+            <div id="current-date">
+            </div>
+            <ul id="nav-link-container">
+                <li class="nav-link"><a href="./index.html">Home</a></li>
+                <li class="nav-link"><a href="./discovery.html">Places</a></li>
+                <li class="nav-link"><a href="join.html">Join</a></li>
+                <li class="nav-link"><a href="directory.html">More Info</a></li>
+            </ul>
+        </nav>
+        <div id="info-banner" class="warning box-container"><h2 class="warning heading">ANNOUNCEMENT</h2><p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
+    </header>
+    <main>
+        <div id="main-content">
+            <h1>Rocksberg Business Directory</h1>
+            <div id="view-options">
+                <button id="grid-view" onclick="showGrid()">
+                    <div class="square"></div><div class="square"></div><div class="square"></div>
+                    <div class="square"></div><div class="square"></div><div class="square"></div>
+                    <div class="square"></div><div class="square"></div><div class="square"></div>
+                </button>
+                <button id="list-view" onclick="showList()">&#9776;</button>
+            </div>
+
+            <div id="card-view">
+                
+            </div>
+
+            <table id="table-view">
+                <tbody>
+                    <tr id="table-info">
+                        <td >Name</td>
+                        <td>Address</td>
+                        <td>Phone Number</td>
+                        <td>Website</td>
+                        <td>Phrase</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </main>
+    <footer>
+        <div id="footer-container">
+            <div id="footer-logo">
+                <div id="footer-logo-container">
+                    <img id="footer-logo-img" src="../lesson03/images/Rocksberg-logos_black-small.png" alt="Website logo image Rocksberg">
+                </div>
+            </div>
+            <div id="footer-content">
+                <p>&copy; Rexburg Chamber of Commerce</p>
+                <p><span id="year"></span> - Matthew Behymer - Idaho</p>
+                <p>WDD 230 Project</p>
+                <p>Last Modified: <span id="last-change"></span></p>
+                <p>Rocksberg Location: <a href="https://goo.gl/maps/wn699n6enLtiACYx8">&#128205;</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
