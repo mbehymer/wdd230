@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Yeseva+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    color: #333333;
+}
+
+
+body {
+    text-align: center;
+    margin:0 auto;
+    font-size: 1.2rem;
+    background-color: #82AC7C;
+}
+
+.headings, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 200;
+    
+}
+h3 {
+
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.5rem;
+
+}
+
+.content-text {
+    font-family: 'Varela Round', sans-serif;
+}
+
+#container {
+    display:grid;
+    grid-template-rows:auto 1fr auto;
+    min-height:99.99vh;
+    margin: 0 5vw;
+    background-color: #FFFFFF;
+}
+
+
+#nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+#nav-list li{
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid #33333355;
+    padding: 5px 0;
+
+}
+
+#nav-list li a {
+    text-decoration: none;
+}
+
+#nav-list li:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    padding: 5vw 0;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+h2 {
+    font-size: 3rem;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    border-top: 2px solid #333333;
+}
+
+#site-purpose-container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#persona-container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.persona-container {
+    max-width: 450px;
+}
+
+.persona-container p span{
+    font-weight: bold;
+}
+
+.image-container {
+    max-width: 250px;
+    margin: 0 auto;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+#font-container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.font-container {
+    max-width: 300px;
+}
+
+#color-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 0 15px;
+}
+
+.color-container {
+    max-width: 200px;
+    border: 2px solid #333333;
+    border-radius: 5px;
+}
+
+.color-container p {
+    padding: 15px;
+}
+
+.color-description {
+    border-top: 2px solid #333333;
+}
+
+.shadow-color {
+    background-color: #82AC7C;
+    color: #FFFFFF;
+}
+
+.main-background-color {
+    background-color: #FFFFFF;
+}
+
+.main-text-color {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.warning-color {
+    background-color: #A88C7D;
+    color: #FFFFFF;
+}
+
+.highlight-logo-color {
+    background-color: #9DBA94;
+}
+
+
+#wire-frame-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.wire-frame-card {
+    border: 2px solid #333333;
+    border-radius: 5px;
+}
+
+.wire-frame-card:hover {
+    box-shadow: 0px 0px 10px #333333;
+}
+
+.wire-frame-card h3 {
+    padding: 5px;
+}
+
+.wire-frame-card img {
+    max-height: 600px;
+    /* width:100%; */
+}
+
+
+
+
+#footer-container {
+    display: flex;
+    background-color: #82AC7C;
+    padding: 5px 0;
+}
+
+#footer-content {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px #33333388;
+}
