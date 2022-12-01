@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matthew Behymer">
+    <meta name="description" content="A site plan and overview of the Play Ludus website describing the typography, target audience, color scheme, and showing a wire frame.">
+    <link rel="stylesheet" href="./css/main.css" >
+    <link rel="stylesheet" href="./css/medium.css" >
+    <script defer src="js/main.js"></script> <!-- Using Defer will cause the javascript to run after the html has loaded-->
+    
+    <title>Ludus Play | Home</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#target-audience">Target Audience</a></li>
+                    <li><a href="#typography">Typography</a></li>
+                    <li><a href="#color-scheme">Site Plan</a></li>
+                    <li><a href="#wire-frame">Wire Frame</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Website Plan</h1>
+            <section id="home">
+                <div id="site-name-container">
+                    <h2>Site Name</h2>
+                    <p>Play Ludus</p>
+                    <h2>Domain</h2> 
+                    <p>playludus.com</p>
+                </div>
+                <div id="site-purpose-container">
+                    <h2>Site Purpose</h2>
+                    <p>Play Ludus is an online education game platform allowing people to post and submit their own game ideas and for you to view and try out other people's games.</p>
+                </div>
+                <div id="logo-description-container">
+                    <h2>Logo</h2>
+                    <div id="logo-description-image-container" class="image-container">
+                        <img src="./images/Play Ludus-1.jpg" alt="Play Ludus logo image">
+                    </div>
+                </div>
+            </section>
+            <section id="target-audience">
+                <h2>Target Audience</h2>
+                <div id="persona-container-flex">
+                    <div class="persona-container">
+                        <h3>Persona 1:</h3>
+                        <h4>Brock Jones</h4>
+                            
+                        <div class="image-container">
+                            <img src="./images/brockjones.png" alt="Portforlio of Brock Jones">
+                        </div>
+                        <p class="persona-description"><span>Description:</span>Parent who wants their children to play games while learning.</p>
+                        <p class="persona-scenarios">
+                            <span>Scenarios:</span>A teacher who has engaging game ideas for her students and wants to be able to post them.
+                        </p>
+                    </div>
+                    <div class="persona-container">
+                        <h3>Persona 2:</h3>
+                        <h4>Sarah Smith</h4>
+                        <div class="image-container">
+                            <img src="./images/sarahsmith.png" alt="Portforlio of Sarah Smith">
+                        </div>
+                        <p class="persona-description"><span>Description:</span>Is an entrepreneur looking for a place to set up her business.</p>
+                        <p class="persona-scenarios">
+                            <span>Scenarios:</span>
+                            Places to go rock climbing, Camping sites, White water rafting, Tour companies, City activies
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="typography">
+                <h2>Typography</h2>
+                <div id="font-container-flex">
+                    <div class="font-container">
+                        <h3 class="headings">Yeseva One:</h3>
+                        <p>This will be used to for all headings or titles.</p>
+                    </div>
+                    <div class="font-container">
+                        <h3 class="content-text">Varela Round:</h3>
+                        <p>This will be used to for all text that is not a heading or title.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="color-scheme">
+                <h2>Color Scheme</h2>
+                <div id="color-flex">
+                    <div class="color-container">
+                        <p class="shadow-color">#82AC7C</p>
+                        <p class="color-description">This will be used as a shadow and to accent other colors.</p>
+                    </div>
+                    
+                    <div class="color-container">
+                        <p class="main-background-color">#FFFFFF</p>
+                        <p class="color-description">This will be used as the main background color.</p>
+                    </div>
+                    <div class="color-container">
+                        <p class="main-text-color">#333333</p>
+                        <p class="color-description">This will be used as the main text color as well as border color.</p>
+                    </div>
+                    <div class="color-container">
+                        <p class="warning-color">#A88C7D</p>
+                        <p class="color-description">This will be used as a warning and to underline important details.</p>
+                    </div>
+                    <div class="color-container">
+                        <p class="highlight-logo-color">#9DBA94</p>
+                        <p class="color-description">This will be used as a highlight color.</p>
+                    </div>
+                </div>
+                
+            </section>
+            <section id="wire-frame">
+                <h2>Wire Frames</h2>
+                <div id="wire-frame-container">
+                    <div class="wire-frame-card">
+                        <a href="images/wire-frame-small.png"><img src="images/wire-frame-small.png"></a>
+                        <h3>Small</h3>
+                    </div>
+                    <div class="wire-frame-card">
+                        <a href="images/wire-frame-medium.png"><img src="images/wire-frame-medium.png"></a>
+                        <h3>Medium</h3>
+                    </div>
+                    <div class="wire-frame-card">
+                        <a href="images/wire-frame-large.png"><img src="images/wire-frame-large.png"></a>
+                        <h3>Large</h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div id="footer-container">
+                <div id="footer-content">
+                    <p>&copy;<span id="year"></span> - Matthew Behymer - Idaho</p>
+                    <p>Last Modified: <span id="last-change"></span></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
