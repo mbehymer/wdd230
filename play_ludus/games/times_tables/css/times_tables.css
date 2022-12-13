@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Yeseva+One&display=swap');
+
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+
+#begin {
+    display: block;
+    font-size: 2rem;
+    padding: 15px;
+    background-color: #88ccff;
+    margin: auto;
+    border: 2px solid #333333;
+    border-radius: 5px;
+}
+
+#game-content {
+    display: none;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows:1fr 4fr 2fr;
+    gap: 20px;
+}
+
+#time-bar-container {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 50px;
+    border: 2px solid #333333;
+    padding: 5px;
+}
+#time-bar {
+    height: inherit;
+    /* width: 500.53px; */
+    background-color: #ff8888;
+    border-radius: 5px;
+}
+
+#math-problem-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 3rem;
+}
+
+#math-problem-container #answer {
+    align-self: center;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+#restart-btn {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 400px;
+    justify-self: center;
+    font-size: 2rem;
+    border: 2px solid #333333;
+    border-radius: 5px;
+}
+
+#level-container {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    padding: 0px 30px;
+    justify-content: space-around;
+    border: 2px solid #333333;
+    text-align: center;
+}
+
+.lvl-btn {
+    padding: 5px;
+    border: 2px solid #333333;
+    border-radius: 5px;
+}
+
+.lvl-btn:hover {
+    filter:brightness(80%);
+}
+
+.lvl-btn[disabled] {
+    filter:brightness(50%);
+}
+
+#lvl-easy {
+    background-color: #88cc88;
+}
+#lvl-medium {
+    background-color: #ffdd88;
+}
+#lvl-hard {
+    background-color: #ff8888;
+}
+
+#popup-msg {
+    display: none;
+    position: fixed;
+    left: 2.5%;
+    top: 2.5%;
+    width: calc(95% - 100px);
+    height: calc(95%);
+    background-color: #F1F1F1f1;
+    border: 3px solid #333333;
+    border-radius: 5px;
+    /* text-align: right; */
+    padding: 0 50px;
+    font-size: 3rem;
+    font-family: cursive;
+}
+
+#close-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 3px solid #333333;
+    border-radius: 5px;
+    color:#FFFFFF;
+    background-color: #333333;
+    font-weight: bold;
+}
+
+#close-button:hover {
+    color:#ff8888;
+}
+
+#inner-msg-text {
+    /* margin: auto; */
+    /* width: 100 */    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap; */
+    /* align-content: center; */
+    background-color: #FFFFFF;
+    border: 2px solid #333333;
+    border-radius: 5px;
+}
+
+#inner-msg-text p {
+    margin: 10px;
+    text-align: center;
+    background-color: #88cc8888;
+    border-radius: 5px;
+}
+
+#inner-msg-text #game-over-msg {
+    background-color: #ff8888;
+}
+
+#msg-result-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+
+.correct-msg {
+    opacity: 0;
+    max-width: 200px;
+    padding: 25px 30px;
+    margin: 0 auto;
+    background-color: rgb(102, 224, 139);
+    font-size: 2em;
+    border-radius: 5px;
+}
+
+.incorrect-msg {
+    opacity: 0;
+    max-width: 200px;
+    padding: 25px 30px;
+    margin: 0 auto;
+    background-color: rgb(236, 134, 134);
+    font-size: 2em;
+    border-radius: 5px;
+}
+
+.fade-out {
+    text-align: center;
+    position: absolute;
+    animation: fadeOut 1s;
+    -webkit-animation: fadeOut 1s;
+    /* -moz-animation: fadeOut 8s;
+    -o-animation: fadeOut 8s;
+    -ms-animation: fadeOut 8s; */
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+    25% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;
+    }
+}
+
+@-webkit-animation fadeOut {
+    0% {
+        opacity: 0;
+    }
+    25% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;
+    }
+}

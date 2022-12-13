@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Yeseva+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    color: #333333;
+    /* font-size: 1rem; */
+}
+
+body {
+    display:grid;
+    grid-template-rows:auto 1fr auto;
+    min-height:99.99vh;
+}
+
+.headings, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Yeseva One', cursive;
+    /* font-weight: 200; */
+    
+}
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #54738E;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: 2px solid #7297A0;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between  ;
+    width: 100%;
+    background-color: #9DBA94;
+}
+
+#logo-container {
+    height: 75px;
+}
+#logo-container a {
+    display: inline-block;
+    height: inherit;
+    border-radius: 0 0 50%;
+    overflow: hidden;
+}
+
+#logo-container a img {
+    height: inherit;
+}
+
+nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100%; */
+    margin: 0 auto;
+}
+
+.show-nav {
+    display: flex;
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 75px;
+    background-color: #91ab89;
+    order: 4;
+}
+
+nav ul li{
+    list-style:none;
+}
+
+nav ul li a{
+    display: block;
+    color: #293027;
+    padding: 10px 0;
+    width: 200px;
+    text-align: center;
+}
+nav ul li a:hover {
+    background-color: #889f80;
+}
+
+
+
+nav #nav-btn {
+    background-color: #889f80;
+    color: #293027;
+    padding: 0 30px;
+    font-size: 2rem;
+    border: none;
+}
+
+nav #account-profile {
+    height: 75px;
+    text-align: right;
+}
+nav #account-profile a{
+    display: inline-block;
+    height: inherit;
+    margin-right: 25px;
+    margin-left: -25px;
+    border-radius: 0 0 50% 50%;
+    background-color: #889f80;
+}
+
+nav #account-profile a:hover {
+    padding: 10px 0 0 0;
+    /* margin-right: 23px;
+    margin-left: 0px; */
+}
+nav #account-profile img{
+    height: calc(100% - 20px);
+    border: 2px solid #33333333;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+footer {
+    background-color: #748171;
+    color: #FFFFFF;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#foot-logo-container {
+    display: inline-block;
+    height: 75px;
+}
+
+#foot-logo-container a {
+    display: inline-block;
+    height: inherit;
+    border-radius: 0 50% 0 0;
+    overflow: hidden;
+}
+
+#foot-logo-container a img {
+    height: inherit;
+}
+
+#social-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+.social-container {
+    width: 48px;
+    height: 48px;
+}
+
+@media screen and (min-width: 1050px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+    nav #nav-links{
+        display: flex;
+        flex-direction: row;
+        position: static;
+        order: 0;
+    }
+
+    nav #nav-btn {
+        display: none;
+    }
+    
+
+}

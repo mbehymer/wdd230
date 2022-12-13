@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/times_tables.css">
+    <script defer src="./js/times_tables.js"></script>
+    <title>Play Ludus | Times Tables</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Times Tables</h1>
+        <div id="popup-msg">
+            <p id="close-button">X</p>
+            <div id="inner-msg-text">                    
+                <p id="game-over-msg">Oh no, you ran out of time!</p>
+                <p>Score:</p>
+                <p>Easy: <span id="easy-problems"></span></p>
+                <p>Medium: <span id="medium-problems"></span></p>
+                <p>Hard: <span id="hard-problems"></span></p>
+                <p>Total Time: <span id="total-time"></span> Seconds</p>
+            </div>
+
+            </div>
+        <button id="begin" onclick="beginProblems()">Begin</button>
+        <div id="game-content">
+            <div id="time-bar-container">
+                <div id="time-bar"></div>
+            </div>
+            <div id="math-problem-container">
+                <label for="answer" id="equation"><span id="first-num"></span> X <span id="second-num"></span> = </label>
+                <input type="number" id="answer">
+            </div>
+            <button id="restart-btn" onclick="restartGame()">Restart</button>
+            <div id="level-container">
+                <h2>Levels:</h2>
+                <button id="lvl-easy" class="lvl-btn">Easy</button>
+                <button id="lvl-medium" class="lvl-btn">Medium</button>
+                <button id="lvl-hard" class="lvl-btn">Hard</button>
+            </div>
+        </div>
+        <div id="msg-result-container">
+            <div id="correct" class="correct-msg">Correct</div>
+            <div id="incorrect" class="incorrect-msg">Incorrect</div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
