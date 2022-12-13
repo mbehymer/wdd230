@@ -1,0 +1,36 @@
+{
+    "games": [
+        {
+            "name": "Times Tables",
+            "img": "times_tables.png"
+        },
+        {
+            "name": "Checkers",
+            "img": "checkers.png"
+        },
+        {
+            "name": "Learn To Code",
+            "img": "code.png"
+        },
+        {
+            "name": "Matching Game",
+            "img": "match.png"
+        },
+        {
+            "name": "Learn Periodic Table",
+            "img": "periodic_table.png"
+        },
+        {
+            "name": "Tic Tac Toe",
+            "img": "tic_tac_toe.png"
+        },
+        {
+            "name": "Practice Typing",
+            "img": "typing.png"
+        },
+        {
+            "name": "Chess",
+            "img": "chess.png"
+        }
+    ]
+}
