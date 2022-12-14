@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/submit.css">
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/header-footer.css">
     <script defer src="./js/header-footer.js"></script>
-    <script defer src="./js/submit.js"></script>
+    <script defer src="./js/login.js"></script>
     <title>Play Ludus | Submit</title>
 </head>
 <body>
@@ -28,43 +28,23 @@
         </nav>
     </header>
     <main>
-        <h1>Game Idea Submission:</h1>
-        <hr>
-        <form method="get" action="thankyou.html">
-            <div id="form-container">
-                <fieldset id="contact-info-container">
-                    <legend>Contact Info:</legend>
-                    <div class="flex-container">
-                        <label for="fname">First Name<span class="required">*</span>:</label>
-                        <input type="text" id="fname" name="firstname" required>
-                    </div>
-
-                    <div class="flex-container">
-                        <label for="lname">Last Name<span class="required">*</span>:</label>
-                        <input type="text" id="lname" name="lastname" required>
-                    </div>
-
-                    <div class="flex-container">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
-                    </div>
-                    <div class="flex-container">
-                        <label for="cellnumber">Phone Number<span class="required">*</span>:</label>
-                        <input type="tel" id="cellnumber" name="cellphonenumber">
-                    </div>
-                </fieldset>
-                <fieldset id="game-description-container">
-                    <legend>Description</legend>
-                    <div class="flex-container">
-                        <label for="game-description">Game Description<span class="required">*</span>:</label>
-                        <textarea type="text" id="game-description" name="firstname" required></textarea>
-                    </div>
-
-                </fieldset>
+        <h1>Login</h1>
+        
+        <div id="account-login">
+            <div id="account-img-container">
+                <img src="./images/profile-image.png" alt="profile-img">
             </div>
-            
-            <input type="submit" value="Submit" class="btn" id="submit">
-        </form>
+            <div id="email-container" class="flex-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="example@email.com" required>
+            </div>
+            <div id="password-container" class="flex-container">
+                <label for="password">password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <button id="log-in-btn" class="btn" onclick="login()">Login</button>
+            <button id="sign-out-btn" class="btn" onclick="signOut()">Sign Out</button>
+        </div>
     </main>
     <footer>
         <div id="foot-logo-container">
