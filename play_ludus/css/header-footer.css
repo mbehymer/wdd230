@@ -115,6 +115,7 @@ nav #nav-btn {
 nav #account-profile {
     height: 75px;
     text-align: right;
+    z-index: 1;
 }
 nav #account-profile a{
     display: inline-block;
@@ -135,6 +136,10 @@ nav #account-profile img{
     border: 2px solid #33333333;
     border-radius: 50%;
     margin: 8px;
+}
+
+.not-logged-in { 
+    border: 2px solid red;
 }
 
 footer {

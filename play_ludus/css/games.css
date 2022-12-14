@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#card-view {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+    margin: 0 20px 150px 20px;
+}
+
+.card {
+    text-align: center;
+    max-width: 300px;
+    padding: 20px;
+    border: 4px solid #333333;
+    border-radius: 5px;
+}
+
+
+@media screen and (min-width: 650px) {
+    
+    #card-view {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: space-around;
+        margin: 0 150px 150px 150px;
+    }
+}

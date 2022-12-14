@@ -27,18 +27,22 @@ function displayCardGame(game) {
     let card = document.createElement("div");
     let gameImg = document.createElement("img");
     let name = document.createElement("h2");
+    let link = document.createElement("a");
+
     // popluate with information
     card.classList.add("card");
-    gameImg.setAttribute("width", "125px");
-    gameImg.setAttribute("height", "125px");
-    gameImg.setAttribute("src", game.image);
+    gameImg.setAttribute("width", "250px");
+    gameImg.setAttribute("height", "250px");
+    gameImg.setAttribute("src", `./images/${game.img}`);
     gameImg.setAttribute("alt", `${game.title} Image`);
     name.textContent = game.name;
+    link.setAttribute("href", game.url);
 
     // // add elements to card
     card.appendChild(gameImg);
-    card.appendChild(name);
-
+    link.appendChild(name);
+    card.appendChild(link);
+    
     // // add card to the page
     document.querySelector("#card-view").appendChild(card);
 }

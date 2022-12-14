@@ -2,35 +2,43 @@
     "games": [
         {
             "name": "Times Tables",
-            "img": "times_tables.png"
+            "img": "times_tables.png",
+            "url": "games/times_tables/index.html"
         },
         {
             "name": "Checkers",
-            "img": "checkers.png"
+            "img": "checkers.png",
+            "url": "games/missing_page.html"
         },
         {
             "name": "Learn To Code",
-            "img": "code.png"
+            "img": "code.png",
+            "url": "games/missing_page.html"
         },
         {
             "name": "Matching Game",
-            "img": "match.png"
+            "img": "match.png",
+            "url": "games/missing_page.html"
         },
         {
             "name": "Learn Periodic Table",
-            "img": "periodic_table.png"
+            "img": "periodic_table.png",
+            "url": "games/missing_page.html"
         },
         {
             "name": "Tic Tac Toe",
-            "img": "tic_tac_toe.png"
+            "img": "tic_tac_toe.png",
+            "url": "games/missing_page.html"
         },
         {
             "name": "Practice Typing",
-            "img": "typing.png"
+            "img": "typing.png",
+            "url": "games/missing_page.html"
         },
         {
             "name": "Chess",
-            "img": "chess.png"
+            "img": "chess.png",
+            "url": "games/missing_page.html"
         }
     ]
 }
